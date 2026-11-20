@@ -22,3 +22,4 @@ Se revisa entre fase y fase.
 
 - Compartir un ticket puntual con otro usuario: sin historia MDA-n; acordar con Martín.
 - MDA-4: el SLA corre en horas corridas (24/7). Se confirma en el spec de esa fase.
+- MDA-7: operaciones ya ve todos los tickets desde MDA-1 (spec 001, R18).
