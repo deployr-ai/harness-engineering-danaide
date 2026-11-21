@@ -27,6 +27,25 @@ Martín ya cargó estas historias. Las claves son las de Jira; el número no es 
 - **MDA-6** SLA vencido: marcar el ticket y escalarlo.
 - **MDA-7** Reportes para operaciones: abiertos por nivel y cumplimiento de SLA.
 
+## Cómo arranca cada grupo
+
+Cada grupo trabaja en su propio fork de este repo. Este repo queda con el punto de partida y para
+las demos de clase.
+
+1. Un integrante hace el fork con el nombre `harness-engineering-danaide-grupo-NN` (por ejemplo,
+   `harness-engineering-danaide-grupo-03`, con el número del Sheet de grupos) y suma al resto del
+   grupo como colaboradores (Settings, Collaborators).
+2. Cada integrante clona el fork: `git clone https://github.com/<usuario>/harness-engineering-danaide-grupo-NN.git`.
+3. Una rama por fase, con la clave de la historia en el nombre: `git switch -c MDA-1-tickets`.
+4. El PR va al `main` **del fork**. Al abrirlo, GitHub propone como destino este repo: cambiar
+   "base repository" por el fork del grupo.
+5. Otro integrante revisa el PR y el grupo lo mergea. Ese merge cierra la fase.
+6. El link del fork va en la columna **Fork (GitHub)** del Sheet de grupos.
+
+Para los gates en CI, habilitar las Actions en la pestaña **Actions** del fork: GitHub las deja
+apagadas en los forks. Si este README cambia después de hacer el fork, el botón **Sync fork** trae
+los cambios.
+
 ## Cómo trabajamos
 
 - `constitution.md`: los acuerdos del proyecto. Cambian poco y con acuerdo del equipo.
