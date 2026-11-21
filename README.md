@@ -46,6 +46,18 @@ Para los gates en CI, habilitar las Actions en la pestaña **Actions** del fork:
 apagadas en los forks. Si este README cambia después de hacer el fork, el botón **Sync fork** trae
 los cambios.
 
+**¿El grupo no llegó con su spec 001?** La rama `referencia/clase-01` trae constitución, setlist y
+spec 001, sin código. Un fork hecho solo con `main` (la opción que GitHub deja tildada) no la tiene,
+y **Sync fork** tampoco la trae. Para arrancar MDA-1 desde ahí:
+
+```bash
+git remote add upstream https://github.com/deployr-ai/harness-engineering-danaide.git
+git fetch upstream referencia/clase-01
+git switch -c MDA-1-tickets upstream/referencia/clase-01
+```
+
+Antes de la clase 3, el grupo reescribe la constitución con su propia entrevista.
+
 ## Cómo trabajamos
 
 - `constitution.md`: los acuerdos del proyecto. Cambian poco y con acuerdo del equipo.
